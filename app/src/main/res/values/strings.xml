@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NasaMarsRover</string>
+    <string name="title_compose">Compose</string>
+    <string name="title_kotlin">Kotlin</string>
+    <string name="base_url">https://api.nasa.gov</string>
+    <string name="api_key">AyHYvkgDh4gCmDpuFPUj5kmc2nLHsJS5ikGGHKHe</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="not_answer_from_server">No response from server</string>
+    <string name="image">Image</string>
+    <string name="details">Rover details\n%s (Total photos %s) \n\nCamera details\n%s</string>
+    <string name="photo_details">Photo Details</string>
+</resources>

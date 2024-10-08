@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_kotlin">
+
+    <fragment
+        android:id="@+id/navigation_kotlin"
+        android:name="com.yasenenko.nasa.ui.kotlin.KotlinFragment"
+        android:label="@string/title_kotlin"
+        tools:layout="@layout/fragment_kotlin" >
+
+        <action
+            android:id="@+id/action_kotlin_to_details"
+            app:destination="@id/navigation_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_details"
+        android:name="com.yasenenko.nasa.ui.details.PhotoDetailsFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_details" >
+
+        <argument
+            android:name="photo"
+            app:argType="com.yasenenko.nasa.domain.model.Photo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_compose"
+        android:name="com.yasenenko.nasa.ui.compose.ComposeFragment"
+        android:label="@string/title_compose">
+        <action
+            android:id="@+id/action_compose_to_details"
+            app:destination="@id/navigation_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>
